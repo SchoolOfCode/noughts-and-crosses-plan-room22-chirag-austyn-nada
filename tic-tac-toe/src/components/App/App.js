@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./App.module.css";
+import {calculateWinner} from "../../helper"
 import Board from "../Board";
 
 function App() {
-  //const [player, setPlayer] = useState("X");
-  
+  const [board, setBoard] = useState([Array(9).fill(null)]);
+  const [isPlayerX, setIsPlayerX] = useState(true)
+  const winner = calculateWinner(board)
+  const currentPlayer
   // }
   // function playerMove(x) {
   //   if (x === 0) {
