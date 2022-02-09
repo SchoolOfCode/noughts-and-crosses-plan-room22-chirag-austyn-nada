@@ -1,15 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styles from "./App.module.css";
 import Board from "../Board";
 
-
-
-
-
 function App() {
-  const [move, setMove] = useState('')
+  const [player, setPlayer] = useState("X");
 
-
+  // }
   // function playerMove(x) {
   //   if (x === 0) {
   //     return <p>X</p>;
@@ -18,11 +14,11 @@ function App() {
   //   }
   // }
 
-function playerMove(event){
- setMove("X");
-}
+  function playerMove(event) {
+    setMove("X");
+  }
 
-console.log(move)
+  console.log(move);
 
   return (
     <div className={styles.App}>
