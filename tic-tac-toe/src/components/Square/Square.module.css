@@ -1,5 +1,7 @@
 .Square {
   /* width: 100px;
   height: 100px; */
-  background-color: blueviolet;
+  background-color: rgb(206, 184, 224);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
 }
