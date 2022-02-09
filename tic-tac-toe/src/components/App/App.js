@@ -18,12 +18,13 @@ function App() {
       currentPlayer,
       ...board.slice(index + 1),
     ]);
+    setIsPlayerX(!isPlayerX)
   }
 
   return (
     <div className={styles.App}>
       <h1>Tic-Tac-Toe</h1>
-      <Board onSelectSquare={handleSquareClick} />
+      <Board squares = {board} onSelectSquare={handleSquareClick} />
     </div>
   );
 }
