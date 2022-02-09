@@ -1,12 +1,22 @@
-import React from 'react'
-import styles from "./Square.module.css"
+import React, {useState} from "react";
+import styles from "./Square.module.css";
 
-function Square() {
+
+
+function Square(){
+const [move, setMove] = useState("") 
+  
+  function playerMove(event) {
+    console.log("I'm clicked")
+    setMove("X");
+  }
+
+
   return (
-    <div className={styles.Square}>
-      <p>I'm a square</p>
+    <div className={styles.Square} onClick={playerMove}>
+      {move}
     </div>
-  )
+  );
 }
 
-export default Square
+export default Square;
