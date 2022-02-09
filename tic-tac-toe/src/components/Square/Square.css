@@ -1,0 +1,17 @@
+.squares {
+  /* width: 100px;
+  height: 100px; */
+  background-color: rgb(206, 184, 224);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+
+.X {
+  color: blue;
+  font-size: larger;
+}
+
+.O {
+  color: red;
+  font-size: larger;
+}

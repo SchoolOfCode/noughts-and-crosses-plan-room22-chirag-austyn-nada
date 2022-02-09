@@ -1,30 +1,13 @@
-import React, {useState} from "react";
-import styles from "./Square.module.css";
+import React, { useState } from "react";
+import "./Square.css";
 
-
-
-function Square(){
-const [move, setMove] = useState("") 
-  
-  // function playerMove(event) {
-  //   if (player === 1) { console.log("I'm clicked")
-  //   setMove("X");}
-  //   else if (player === 1) {
-  //     console.log("I'm clicked");
-  //     setMove("0");
-  //   }
-
-  // }
-
-  function playerMove(event){
-    setMove("X")
-  }
-
+function Square({ onClick, value }) {
+  const styles = value ? `squares ${value}` : `squares`;
 
   return (
-    <div className={styles.Square} onClick={playerMove}>
-      <h1>{move}</h1>
-    </div>
+    <button className={styles} onClick={onClick}>
+      {value}
+    </button>
   );
 }
 

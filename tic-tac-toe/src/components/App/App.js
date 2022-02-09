@@ -3,8 +3,8 @@ import styles from "./App.module.css";
 import Board from "../Board";
 
 function App() {
-  const [player, setPlayer] = useState("X");
-
+  //const [player, setPlayer] = useState("X");
+  
   // }
   // function playerMove(x) {
   //   if (x === 0) {
@@ -14,11 +14,11 @@ function App() {
   //   }
   // }
 
-  function playerMove(event) {
-    setMove("X");
-  }
+//   function playerMove(event) {
+//     setMove("X");
+//   }
 
-  console.log(move);
+//   console.log(move);
 
   return (
     <div className={styles.App}>

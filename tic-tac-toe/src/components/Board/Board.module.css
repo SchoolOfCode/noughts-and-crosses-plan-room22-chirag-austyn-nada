@@ -1,4 +1,4 @@
-.gameBoard {
+.board {
   background-color: black;
   /* max-width: 700px; */
   min-height: 100vh;
@@ -7,27 +7,5 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 1em 1em;
   grid-auto-flow: row;
-  grid-template-areas:
-    "Top-left Top-centre Top-right"
-    "Middle-left Middle-centre Middle-right"
-    "Bottom-left Bottom-centre Bottom-right";
 }
-
-.Top-left { grid-area: Top-left; }
-
-.Top-centre { grid-area: Top-centre; }
-
-.Top-right { grid-area: Top-right; }
-
-.Middle-left { grid-area: Middle-left; }
-
-.Middle-centre { grid-area: Middle-centre; }
-
-.Middle-right { grid-area: Middle-right; }
-
-.Bottom-left { grid-area: Bottom-left; }
-
-.Bottom-centre { grid-area: Bottom-centre; }
-
-.Bottom-right { grid-area: Bottom-right; }
 

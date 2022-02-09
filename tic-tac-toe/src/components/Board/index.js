@@ -1,23 +1,16 @@
-import React from 'react'
-import styles from "./Board.module.css"
-import Square from "../Square"
+import React from "react";
+import styles from "./Board.module.css";
+import Square from "../Square";
 
-function Board() {
-
-  
-  return (
-    <div className={styles.gameBoard}>
-      <Square  className={styles.TopLeft} />
-      <Square  className={styles.TopCentre} />
-      <Square  className={styles.TopRight} />
-      <Square  className={styles.MiddleLeft} />
-      <Square  className={styles.MiddleCentre} />
-      <Square className={styles.MiddleRight} />
-      <Square  className={styles.BottomLeft} />
-      <Square  className={styles.BottomCentre} />
-      <Square className={styles.BottomRight} />
-    </div>
-  );
-}
-
-export default Board
+const Board = ({ squares, onSelectSquare }) => (
+  <div className={styles.board}>
+    {squares.map((square, index) => (
+      <Square
+        key={index}
+        value={square}
+        onClick={() => onSelectSquare(index)}
+      />
+    ))}
+  </div>
+);
+export default Board;
