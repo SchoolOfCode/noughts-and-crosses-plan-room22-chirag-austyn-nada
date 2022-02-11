@@ -1,11 +1,10 @@
 .board {
-  background-color: black;
-  /* max-width: 700px; */
-  min-height: 100vh;
+  margin: auto;
+  border: 1rem solid #0a0a0a;
+  background: #111111;
+  width: 100vh;
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1em 1em;
-  grid-auto-flow: row;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
 }
-

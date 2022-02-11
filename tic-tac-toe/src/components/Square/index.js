@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import "./Square.css";
+import css from  "../Square/Square.module.css"
 
 function Square({ onClick, value }) {
-  const styles = value ? `squares ${value}` : `squares`;
-
+  // const styles = value ? `squares ${value}` : `squares`;
+console.log(value)
   return (
-    <button className={styles} onClick={onClick}>
-      {value}
-    </button>
-  );
+    <div className={css.squares} onClick={onClick}>
+    
+     <p > {value}</p>
+  
+  </div>);
 }
 
 export default Square;
